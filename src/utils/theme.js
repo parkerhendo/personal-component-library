@@ -26,6 +26,17 @@ export default {
       section: 24,
       headline: 36,
     },
+    lineHeight: {
+      condensed: 1.2,
+      normal: 1.3,
+      expanded: 1.5,
+    },
+    letterSpacing: {
+      condensed: -0.1,
+      normal: -0.05,
+      reset: 0,
+      stretched: 0.1,
+    },
   },
   spacing: {
     xsmall: 2,

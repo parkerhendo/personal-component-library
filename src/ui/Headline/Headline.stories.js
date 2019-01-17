@@ -8,7 +8,7 @@ import FontLoader from '../../utils/helpers/FontLoader';
 import Headline from './index';
 
 const theme = [Theme];
-const stories = storiesOf('Typeography', module);
+const stories = storiesOf('Headline', module);
 
 stories.addDecorator(withThemesProvider(theme));
 
