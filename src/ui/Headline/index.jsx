@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  font-family: sans-serif;
-  font-size: ${props => props.theme.typography.size.headline || 32};
+  font-family: ${(props) => 
+    (props.hero && props.theme.typography.font.headline) ||
+    (props.section && props.theme.typography.font.section)
+  };
+  font-size: ${(props) =>
+    (props.hero && props.theme.typography.size.headline) ||
+    (props.section && props.theme.typography.size.section)}px;
 `;
