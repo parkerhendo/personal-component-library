@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-export default styled.h1`
+const Headline = styled.h1`
   font-family: ${props => (props.hero && props.theme.typography.font.headline)
     || (props.section && props.theme.typography.font.section)};
   font-size: ${props => (props.hero && props.theme.typography.size.headline)
@@ -11,3 +12,10 @@ export default styled.h1`
   color: ${props => props.theme.color.greyscale[700]};
   max-width: 35ch;
 `;
+
+Headline.propTypes = {
+  hero: PropTypes.bool.isRequired,
+  section: PropTypes.bool.isRequired,
+};
+
+export default Headline;

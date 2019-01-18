@@ -1,17 +1,6 @@
-import styled from // { keyframes }
-  'styled-components';
+import styled from 'styled-components';
 
-// const underline = keyframes`
-//   0% {
-//     width: 0%;
-//   }
-
-//   100% {
-//     width: 100%;
-//   }
-// `;
-
-export default styled.a`
+const TextLink = styled.a`
   font-family: ${props => props.theme.typography.font.body};
   font-size: ${props => (props.large && props.theme.typography.size.bodyLarge)
     || (props.small && props.theme.typography.size.bodySmall)}px;
@@ -31,3 +20,5 @@ export default styled.a`
     background: ${props => props.theme.color.greyscale[700]};
   }
 `;
+
+export default TextLink;
