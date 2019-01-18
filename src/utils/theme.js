@@ -20,7 +20,7 @@ export default {
       headline: 'Tiempos Headline Black',
     },
     size: {
-      caption: 11,
+      caption: 12,
       bodySmall: 14,
       bodyLarge: 16,
       section: 24,
