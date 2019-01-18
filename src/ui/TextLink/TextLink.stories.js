@@ -10,7 +10,7 @@ import FontLoader from '../../helpers';
 import TextLink from './index';
 
 const theme = [Theme];
-const stories = storiesOf('Typography - 3. TextLink', module);
+const stories = storiesOf('1. Typography - 1.3 TextLink', module);
 
 stories.addDecorator(withThemesProvider(theme));
 

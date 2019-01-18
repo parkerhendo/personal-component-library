@@ -9,7 +9,7 @@ import Theme from '../../theme';
 import Container from './index';
 
 const theme = [Theme];
-const stories = storiesOf('Layout - 1. Container', module);
+const stories = storiesOf('2. Layout - 2.1 Container', module);
 
 stories.addDecorator(withThemesProvider(theme));
 

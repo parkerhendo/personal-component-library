@@ -10,7 +10,7 @@ import FontLoader from '../../helpers';
 import Caption from './index';
 
 const theme = [Theme];
-const stories = storiesOf('Typography - 4. Caption', module);
+const stories = storiesOf('1. Typography - 1.4 Caption', module);
 
 stories.addDecorator(withThemesProvider(theme));
 

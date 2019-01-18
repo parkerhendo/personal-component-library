@@ -23,7 +23,7 @@ stories.addDecorator(withThemesProvider(theme));
 stories.add('Typography', () => (
   <React.Fragment>
     <FontLoader />
-    <Headline hero>24. Order of props matters!</Headline>
+    <Headline header>24. Order of props matters!</Headline>
     <Caption>January 11, 2019</Caption>
     <Text>
       This is part of a series of posts about writing component API for great developer experience.
