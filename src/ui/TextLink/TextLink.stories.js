@@ -27,4 +27,3 @@ stories.add('Text - Small', () => (
     <TextLink small>Read More</TextLink>
   </React.Fragment>
 ));
-

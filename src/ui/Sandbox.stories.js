@@ -12,6 +12,8 @@ import Caption from './Caption';
 import Headline from './Headline';
 import Text from './Text';
 import TextLink from './TextLink';
+import Hero from './Hero';
+import Container from './Container';
 
 const theme = [Theme];
 const stories = storiesOf('Sandbox', module);
@@ -34,5 +36,17 @@ stories.add('Typography', () => (
         Writing good component API
       </TextLink>
     </Text>
+  </React.Fragment>
+));
+
+stories.add('Hero', () => (
+  <React.Fragment>
+    <FontLoader />
+    <Hero background={300}>
+      <Container>
+        <Caption>Product designer and developer</Caption>
+        <Headline header>Parker Henderson</Headline>
+      </Container>
+    </Hero>
   </React.Fragment>
 ));

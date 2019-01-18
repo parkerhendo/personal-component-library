@@ -6,15 +6,15 @@ import { storiesOf } from '@storybook/react';
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
 import Theme from '../../theme';
-import Hero from './index';
+import Container from './index';
 
 const theme = [Theme];
-const stories = storiesOf('Component - 1. Hero', module);
+const stories = storiesOf('Layout - 1. Container', module);
 
 stories.addDecorator(withThemesProvider(theme));
 
 stories.add('Hero', () => (
   <React.Fragment>
-    <Hero background={600} />
+    <Container>This is a container</Container>
   </React.Fragment>
 ));

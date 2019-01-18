@@ -7,7 +7,6 @@ const Caption = styled.p`
   max-width: 40ch;
   line-height: ${props => props.theme.typography.lineHeight.normal};
   letter-spacing: ${props => props.theme.typography.letterSpacing.expanded};
-  margin-bottom: ${props => props.theme.spacing.large};
 `;
 
 export default Caption;

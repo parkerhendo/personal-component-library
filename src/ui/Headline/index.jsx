@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Headline = styled.h1`
   /* Hero Headline Unique Styles */
-  ${props => props.hero && css`
+  ${props => props.header && css`
     font-family: ${props.theme.typography.font.headline};
     font-size: ${props.theme.typography.size.headline};
     line-height: ${props.theme.typography.lineHeight.condensed};
@@ -17,11 +17,11 @@ const Headline = styled.h1`
   letter-spacing: ${props => props.theme.typography.letterSpacing.normal};
   color: ${props => props.theme.color.greyscale[700]};
   max-width: 35ch;
-  margin-bottom: 0;
+  margin: 0;
 `;
 
 Headline.propTypes = {
-  hero: PropTypes.bool,
+  header: PropTypes.bool,
   section: PropTypes.bool,
 };
 

@@ -19,7 +19,7 @@ const Hero = styled.div`
     left: 0;
     right: -100px;
     bottom: -50%;
-    top: 70%;
+    top: 75%;
     background: ${props => props.theme.color.greyscale[props.background]};
     transform: rotateZ(-8deg);
   }
