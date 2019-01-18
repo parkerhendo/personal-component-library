@@ -1,7 +1,5 @@
-import 
-  styled 
-  // { keyframes } 
-from 'styled-components';
+import styled from // { keyframes }
+  'styled-components';
 
 // const underline = keyframes`
 //   0% {
@@ -14,14 +12,13 @@ from 'styled-components';
 // `;
 
 export default styled.a`
-  font-family: ${(props) => props.theme.typography.font.body};
-  font-size: ${(props) =>
-    (props.large && props.theme.typography.size.bodyLarge) ||
-    (props.small && props.theme.typography.size.bodySmall)}px;
-  color: ${(props) => props.theme.color.greyscale[700]};
+  font-family: ${props => props.theme.typography.font.body};
+  font-size: ${props => (props.large && props.theme.typography.size.bodyLarge)
+    || (props.small && props.theme.typography.size.bodySmall)}px;
+  color: ${props => props.theme.color.greyscale[700]};
   max-width: 60ch;
-  line-height: ${(props) => props.theme.typography.lineHeight.expanded};
-  letter-spacing: ${(props) => props.theme.typography.letterSpacing.normal}px;
+  line-height: ${props => props.theme.typography.lineHeight.expanded};
+  letter-spacing: ${props => props.theme.typography.letterSpacing.normal}px;
   position: relative;
   &::after {
     content: '';
@@ -31,6 +28,6 @@ export default styled.a`
     bottom: -1px;
     height: 1.5px;
     width: 100%;
-    background: ${(props) => props.theme.color.greyscale[700]};
+    background: ${props => props.theme.color.greyscale[700]};
   }
 `;

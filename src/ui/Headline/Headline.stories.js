@@ -1,6 +1,8 @@
 import React from 'react';
 
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { storiesOf } from '@storybook/react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
 import Theme from '../../utils/theme';
