@@ -1,11 +1,23 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 
-export default styled.p`
+const Text = styled.p`
   font-family: ${props => props.theme.typography.font.body};
-  font-size: ${props => (props.large && props.theme.typography.size.bodyLarge)
-    || (props.small && props.theme.typography.size.bodySmall)}px;
+  ${props => props.large && css`
+    font-size: ${props.theme.typography.size.bodyLarge};
+  `}
+  ${props => props.small && css`
+    font-size: ${props.theme.typography.size.bodySmall};
+  `}
   color: ${props => props.theme.color.greyscale[700]};
-  max-width: 60ch;
+  max-width: 65ch;
   line-height: ${props => props.theme.typography.lineHeight.expanded};
-  letter-spacing: ${props => props.theme.typography.letterSpacing.normal}px;
+  letter-spacing: ${props => props.theme.typography.letterSpacing.normal};
 `;
+
+Text.propTypes = {
+  large: PropTypes.bool,
+  small: PropTypes.bool,
+};
+
+export default Text;

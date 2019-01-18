@@ -5,8 +5,8 @@ import { storiesOf } from '@storybook/react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 
-import Theme from '../../utils/theme';
-import FontLoader from '../../utils/helpers/FontLoader';
+import Theme from '../../theme';
+import FontLoader from '../../helpers';
 import Text from './index';
 
 const theme = [Theme];
