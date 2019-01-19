@@ -42,7 +42,7 @@ stories.add('Typography', () => (
 stories.add('Hero', () => (
   <React.Fragment>
     <FontLoader />
-    <Hero background={300}>
+    <Hero background={200}>
       <Container>
         <Caption>Product designer and developer</Caption>
         <Headline header>Parker Henderson</Headline>

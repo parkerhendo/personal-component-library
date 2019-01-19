@@ -20,7 +20,7 @@ const Hero = styled.div`
     right: -100px;
     bottom: -50%;
     top: 75%;
-    background: ${props => props.theme.color.greyscale[props.background]};
+    background: ${props => props.theme.color.greyscale[props.background] || props.background};
     transform: rotateZ(-8deg);
   }
 `;
