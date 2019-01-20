@@ -17,13 +17,20 @@ stories.addDecorator(withThemesProvider(theme));
 stories.add('Headline - Hero', () => (
   <React.Fragment>
     <FontLoader />
-    <Headline hero>Hero Headline</Headline>
+    <Headline type="hero">Hero Headline</Headline>
+  </React.Fragment>
+));
+
+stories.add('Headline - Header', () => (
+  <React.Fragment>
+    <FontLoader />
+    <Headline type="header">Hero Headline</Headline>
   </React.Fragment>
 ));
 
 stories.add('Headline - Section', () => (
   <React.Fragment>
     <FontLoader />
-    <Headline section>Section Headline</Headline>
+    <Headline type="section">Section Headline</Headline>
   </React.Fragment>
 ));

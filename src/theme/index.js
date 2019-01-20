@@ -20,11 +20,12 @@ export default {
       headline: 'Tiempos Headline Black',
     },
     size: {
-      caption: '12px',
+      caption: '13px',
       bodySmall: '14px',
       bodyLarge: '16px',
       section: '24px',
       headline: '36px',
+      hero: '64px',
     },
     lineHeight: {
       condensed: 1.2,

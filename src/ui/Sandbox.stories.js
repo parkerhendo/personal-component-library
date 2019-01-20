@@ -24,7 +24,8 @@ stories.add('Typography', () => (
   <React.Fragment>
     <FontLoader />
     <Headline header>24. Order of props matters!</Headline>
-    <Caption>January 11, 2019</Caption>
+    <Caption inline>January 11, 2019</Caption>
+    <Caption inline ml={16}>Parker Henderson</Caption>
     <Text>
       This is part of a series of posts about writing component API for great developer experience.
     </Text>
